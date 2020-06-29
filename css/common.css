@@ -1,0 +1,345 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-family: Roboto, sans-serif; 
+    letter-spacing: 0.03em;
+}   
+
+
+textarea {
+    resize: none;
+}
+
+/* Утилиты */
+.list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+/* logo */
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.studio {
+    color: var(--title-text-color);
+}
+
+.studio-footer {
+    color: var(--primary-white-color);
+}
+
+
+
+/* site-nav */
+.site-nav {
+    display: flex;
+    margin-left: 86px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+    
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+
+/* auth-nav */
+.letter,
+.phone {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;;
+}
+
+.auth-nav .link {
+    display: inline-flex;
+    align-items: center;
+    
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.auth-nav .auth-item + .auth-item {
+    margin-left: 50px;
+}
+
+
+.auth-item:hover,
+.auth-item:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* main-div */
+.main-div {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Button */
+.button-hero {
+    /* display: inline-flex; */
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+.button {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+
+.button::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    
+    background-image: url(../img/iconsend.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.button-secondary {
+    padding: 6px 22px;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list .link {
+    text-decoration: none;
+}
+
+/* Footer */
+.flex {
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 28px;
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+
+.geo {
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+
+.join {
+    display: inline-block;
+    margin-bottom: 21px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-white-color);
+}
+
+
+.label {
+    display: flex;
+}
+
+
+.item > .personal {
+    display: block;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.item > .personal:hover{
+    background-color: var(--accent-color);
+}
+
+
+.insta {
+    background-image: url(../img/instagramFooter.svg);
+}
+
+
+.twit {
+    background-image: url(../img/twitterFooter.svg);
+}
+
+
+.facebook {
+    background-image: url(../img/facebookFooter.svg);
+}
+
+
+.li {
+    background-image: url(../img/linkedinFooter.svg);
+}
+
+
+.sign {
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+
+.footer-input {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    left: 16px;
+    background-color: #2F303A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+
+.link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+
+
+.copyright {
+    padding-top: 18px;
+    padding-bottom: 21px;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.footer {
+    padding-top: 48px;
+
+    background-color: #2F303A;
+}

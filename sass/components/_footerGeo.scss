@@ -1,0 +1,23 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+
+.geo {
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+}
+
+
+.link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}

@@ -1,0 +1,28 @@
+$main-padding-top: 94px;
+$main-padding-bottom: 94px;
+
+
+.section {
+    padding-top: $main-padding-top;
+    padding-bottom: $main-padding-bottom;
+}
+
+
+.section-features {
+    padding-top: $main-padding-top;
+    padding-bottom: $main-padding-bottom;
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.section-title  {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}

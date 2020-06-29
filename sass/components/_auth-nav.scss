@@ -1,0 +1,33 @@
+.letter,
+.phone {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;;
+}
+
+.auth-nav .link {
+    display: inline-flex;
+    align-items: center;
+    
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.auth-nav .auth-item + .auth-item {
+    margin-left: 50px;
+}
+
+
+.auth-item .link {
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}

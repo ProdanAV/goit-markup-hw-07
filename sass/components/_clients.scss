@@ -1,0 +1,48 @@
+$main-fill: #AFB1B8;
+
+.clients {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.logo {
+    fill: $main-fill;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: currentColor;
+    }
+}
+
+
+.clients  .partner-image + .partner-image {
+    margin-left: 30px;
+    width: 380px;
+}
+
+
+.partner-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $main-fill;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 1px solid $accent-color;
+    }
+}
+
+
+.partner-link:hover > .logo {
+    fill: $accent-color;
+}

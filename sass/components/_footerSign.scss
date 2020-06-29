@@ -1,0 +1,22 @@
+.sign {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+
+.form-footer {
+    display: flex;
+}
+
+.footer-input {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    left: 16px;
+    background-color: #2F303A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
